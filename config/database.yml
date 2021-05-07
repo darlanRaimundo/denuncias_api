@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: darlan
+  password: nagini100
+
+development:
+  <<: *default
+  database: db_denuncias_development
+
+test:
+  <<: *default
+  database: db_denuncias_test
+
+production:
+  <<: *default
+  database: db_denuncias
