@@ -94,3 +94,348 @@ Processing by DenunciaController#index as */*
 Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 0.6ms | Allocations: 753)
 
 
+Started GET "/api/denuncias" for 127.0.0.1 at 2021-05-06 23:25:18 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DenunciasController
+Did you mean?  Api::V1::DenunciaController):
+  
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:25:44 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DenunciasController
+Did you mean?  Api::V1::DenunciaController):
+  
+Started GET "/api/denuncia" for ::1 at 2021-05-06 23:25:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/denuncia"):
+  
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:25:55 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DenunciasController
+Did you mean?  Api::V1::DenunciaController):
+  
+Started GET "/api/v1/denuncias" for ::1 at 2021-05-06 23:26:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncias"):
+  
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:26:57 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DenunciasController
+Did you mean?  Api::V1::DenunciaController):
+  
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:28:50 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::DenunciasController
+Did you mean?  Api::V1::DenunciaController):
+  
+Started GET "/api/denuncia" for ::1 at 2021-05-06 23:29:50 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/denuncia"):
+  
+Started GET "/api/denuncia" for ::1 at 2021-05-06 23:30:38 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/denuncia"):
+  
+Started GET "/api/v1/denuncia" for ::1 at 2021-05-06 23:31:01 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncia"):
+  
+Started GET "/api/v1/denuncia" for ::1 at 2021-05-06 23:34:00 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncia"):
+  
+Started GET "/api/v1/denuncia" for ::1 at 2021-05-06 23:35:32 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncia"):
+  
+Started GET "/api/v1/denuncias" for ::1 at 2021-05-06 23:35:34 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncias"):
+  
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:35:39 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (1.5ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 18ms (Views: 9.8ms | ActiveRecord: 4.7ms | Allocations: 7900)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:35:57 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 742)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:35:58 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.3ms | Allocations: 726)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:35:59 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 743)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:36:02 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.2ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 2.0ms | ActiveRecord: 0.2ms | Allocations: 742)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:36:03 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.4ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 10ms (Views: 8.9ms | ActiveRecord: 0.4ms | Allocations: 725)
+
+
+Started GET "/api/denuncia" for ::1 at 2021-05-06 23:36:27 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/denuncia"):
+  
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:36:31 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.5ms | ActiveRecord: 0.3ms | Allocations: 724)
+
+
+Started GET "/api/v1/denuncias" for ::1 at 2021-05-06 23:37:48 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncias"):
+  
+Started GET "/api/v2/denuncias" for ::1 at 2021-05-06 23:37:51 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v2/denuncias"):
+  
+Started GET "/api/v1/denuncias" for ::1 at 2021-05-06 23:37:53 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/denuncias"):
+  
+Started GET "/api//denuncias" for ::1 at 2021-05-06 23:46:03 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.5ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 5.5ms | Allocations: 2880)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:46:06 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f942ce7d8 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.1ms | ActiveRecord: 0.3ms | Allocations: 725)
+
+
+Started POST "/api/v1/denuncias" for ::1 at 2021-05-06 23:47:51 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/denuncias"):
+  
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    descricao:"Roubo",
+    status:"Pendente",
+    usuario_criador:"darlan"
+}
+Started POST "/api/v1/denuncias" for ::1 at 2021-05-06 23:48:31 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/api/v1/denuncias"):
+  
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    descricao:"Roubo",
+    status:"Pendente",
+    usuario_criador:"darlan"
+}
+Started POST "/api/denuncias" for ::1 at 2021-05-06 23:48:39 -0300
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    descricao:"Roubo",
+    status:"Pendente",
+    usuario_criador:"darlan"
+}
+  
+ActionDispatch::Http::Parameters::ParseError (783: unexpected token at '{
+    descricao:"Roubo",
+    status:"Pendente",
+    usuario_criador:"darlan"
+}'):
+  
+actionpack (6.1.3.2) lib/action_dispatch/http/parameters.rb:96:in `rescue in parse_formatted_parameters'
+actionpack (6.1.3.2) lib/action_dispatch/http/parameters.rb:92:in `parse_formatted_parameters'
+actionpack (6.1.3.2) lib/action_dispatch/http/request.rb:399:in `block in POST'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch'
+rack (2.2.3) lib/rack/request.rb:69:in `fetch_header'
+actionpack (6.1.3.2) lib/action_dispatch/http/request.rb:398:in `POST'
+actionpack (6.1.3.2) lib/action_dispatch/http/parameters.rb:55:in `parameters'
+actionpack (6.1.3.2) lib/action_controller/metal/params_wrapper.rb:284:in `_wrapper_enabled?'
+actionpack (6.1.3.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (6.1.3.2) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (6.1.3.2) lib/abstract_controller/base.rb:165:in `process'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.1.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.3.2) lib/action_dispatch/routing/route_set.rb:842:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.3.2) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.3.2) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.3.2) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.3.2) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.3.2) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+railties (6.1.3.2) lib/rails/engine.rb:539:in `call'
+puma (5.2.2) lib/puma/configuration.rb:248:in `call'
+puma (5.2.2) lib/puma/request.rb:76:in `block in handle_request'
+puma (5.2.2) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
+puma (5.2.2) lib/puma/request.rb:75:in `handle_request'
+puma (5.2.2) lib/puma/server.rb:431:in `process_client'
+puma (5.2.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Error occurred while parsing request parameters.
+Contents:
+
+{
+    descricao:"Roubo",
+    status:"Pendente",
+    usuario_criador:"darlan"
+}
+Started POST "/api/denuncias" for ::1 at 2021-05-06 23:49:30 -0300
+Processing by Api::V1::DenunciasController#create as JSON
+  Parameters: {"descricao"=>"Roubo", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan", "contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>, "denuncia"=>{"descricao"=>"Roubo", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:20:in `create'
+  [1m[36mDenuncia Create (0.5ms)[0m  [1m[32mINSERT INTO "denuncia" ("descricao", "status", "latitude", "longitude", "usuario_criador", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["descricao", "Roubo"], ["status", "Pendente"], ["latitude", 151615], ["longitude", 1616489], ["usuario_criador", "darlan"], ["created_at", "2021-05-07 02:49:30.989646"], ["updated_at", "2021-05-07 02:49:30.989646"]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:20:in `create'
+  [1m[36mTRANSACTION (6.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:20:in `create'
+Completed 201 Created in 25ms (Views: 0.3ms | ActiveRecord: 12.9ms | Allocations: 5488)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:49:35 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.7ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.7ms | Allocations: 853)
+
+
+Started PUT "/api/denuncias/1" for ::1 at 2021-05-06 23:51:34 -0300
+Processing by Api::V1::DenunciasController#update as JSON
+  Parameters: {"descricao"=>"Assassinato a mão armada", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan", "contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>, "id"=>"1", "denuncia"=>{"descricao"=>"Assassinato a mão armada", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan"}}
+  [1m[36mDenuncia Load (0.2ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia" WHERE "denuncia"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:44:in `set_denuncia'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+  [1m[36mDenuncia Update (0.6ms)[0m  [1m[33mUPDATE "denuncia" SET "descricao" = $1, "latitude" = $2, "longitude" = $3, "updated_at" = $4 WHERE "denuncia"."id" = $5[0m  [["descricao", "Assassinato a mão armada"], ["latitude", 151615], ["longitude", 1616489], ["updated_at", "2021-05-07 02:51:34.762147"], ["id", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+Completed 200 OK in 22ms (Views: 0.3ms | ActiveRecord: 5.5ms | Allocations: 3767)
+
+
+Started PUT "/api/denuncias/1" for ::1 at 2021-05-06 23:51:45 -0300
+Processing by Api::V1::DenunciasController#update as JSON
+  Parameters: {"descricao"=>"Roubo a mão armada", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan", "contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>, "id"=>"1", "denuncia"=>{"descricao"=>"Roubo a mão armada", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan"}}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia" WHERE "denuncia"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:44:in `set_denuncia'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+  [1m[36mDenuncia Update (0.4ms)[0m  [1m[33mUPDATE "denuncia" SET "descricao" = $1, "updated_at" = $2 WHERE "denuncia"."id" = $3[0m  [["descricao", "Roubo a mão armada"], ["updated_at", "2021-05-07 02:51:45.197938"], ["id", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (5.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+Completed 200 OK in 11ms (Views: 0.3ms | ActiveRecord: 6.5ms | Allocations: 2259)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:51:50 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.3ms | Allocations: 839)
+
+
+Started PUT "/api/denuncias/1" for ::1 at 2021-05-06 23:52:50 -0300
+Processing by Api::V1::DenunciasController#update as JSON
+  Parameters: {"descricao"=>"Roubo a mão armada", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan", "medida"=>"cadeira eletrica pro safado", "contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>, "id"=>"1", "denuncia"=>{"descricao"=>"Roubo a mão armada", "status"=>"Pendente", "latitude"=>151615, "longitude"=>1616489, "usuario_criador"=>"darlan", "medida"=>"cadeira eletrica pro safado"}}
+  [1m[36mDenuncia Load (0.4ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia" WHERE "denuncia"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:44:in `set_denuncia'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+  [1m[36mDenuncia Update (0.4ms)[0m  [1m[33mUPDATE "denuncia" SET "medida" = $1, "updated_at" = $2 WHERE "denuncia"."id" = $3[0m  [["medida", "cadeira eletrica pro safado"], ["updated_at", "2021-05-07 02:52:50.175715"], ["id", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:29:in `update'
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 5.2ms | Allocations: 2274)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:52:52 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 2ms (Views: 1.9ms | ActiveRecord: 0.3ms | Allocations: 846)
+
+
+Started DELETE "/api/denuncias/1" for ::1 at 2021-05-06 23:53:26 -0300
+Processing by Api::V1::DenunciasController#destroy as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>, "id"=>"1"}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia" WHERE "denuncia"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:44:in `set_denuncia'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:38:in `destroy'
+  [1m[36mDenuncia Destroy (0.3ms)[0m  [1m[31mDELETE FROM "denuncia" WHERE "denuncia"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:38:in `destroy'
+  [1m[36mTRANSACTION (5.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:38:in `destroy'
+Completed 204 No Content in 9ms (ActiveRecord: 5.9ms | Allocations: 1754)
+
+
+Started GET "/api/denuncias" for ::1 at 2021-05-06 23:53:33 -0300
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"contraints"=>#<ApiConstraints:0x00007f9f8c1a3b68 @version=1, @default=true>}
+  [1m[36mDenuncia Load (0.3ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia"[0m
+  ↳ app/controllers/api/v1/denuncias_controller.rb:8:in `index'
+Completed 200 OK in 3ms (Views: 2.6ms | ActiveRecord: 0.3ms | Allocations: 725)
+
+

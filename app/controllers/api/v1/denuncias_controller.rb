@@ -1,16 +1,16 @@
-class DenunciaController < ApplicationController
-  before_action :set_denuncia, only: [:show, :update, :destroy]
+class Api::V1::DenunciasController < ApplicationController
+  before_action :set_denuncia, only: %i[show update destroy]
 
   # GET /denuncia
   def index
-    @denuncia = Denuncia.all
+    @denuncias = Denuncia.all
 
-    render json: @denuncia
+    render json: @denuncias
   end
 
   # GET /denuncia/1
   def show
-    render json: @denuncia
+    render json: @denuncias
   end
 
   # POST /denuncia
@@ -18,7 +18,7 @@ class DenunciaController < ApplicationController
     @denuncia = Denuncia.new(denuncia_params)
 
     if @denuncia.save
-      render json: @denuncia, status: :created, location: @denuncia
+      render json: @denuncia, status: :created, location: api_denuncia_url(@denuncia)
     else
       render json: @denuncia.errors, status: :unprocessable_entity
     end
