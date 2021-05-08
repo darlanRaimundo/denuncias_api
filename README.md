@@ -17,85 +17,82 @@ Endpoints API
   
 #### localhost:3000/api/auth  -- deletar usuario (DELETE)
  *valores header*
-  key
-   access_token
-   uid
-   client
+   - access_token
+   - uid
+   - client
 
 #### localhost:3000/api/auth/sign_in  -- logar (POST)
  *valores body*
-  email
-  password
+  - email
+  - password
 
 #### localhost:3000/api/auth/validate_token  -- validar (GET)
  *valores header*
-  key
-   access_token
-   uid
-   client
+   - access_token
+   - uid
+   - client
  
 #### localhost:3000/api/auth/sign_out  -- deslogar (DELETE)
  *valores header*
-  key
-   access_token
-   uid
-   client
+   - access_token
+   - uid
+   - client
   
 #### localhost:3000/api/auth/password -- alteração de senha (POST)
  *valores body*
-  email
+  - email
   
 #### localhost:3000/api/auth/password -- reset de senha (PUT)
  *valores body*
-  password
-  password_confirmation 
+  - password
+  - password_confirmation 
   
  *valores header*
-  access_token
-  uid
-  client
-  token                                                                                                                                                            
+  - access_token
+  - uid
+  - client
+  - token                                                                                                                                                            
 ----------- Autenticação usuário ( Fim )-----------------------
                                                                                                                                                                     
 -------------------- Denuncias ( Inicio )-----------------------
 
 #### localhost:3000/api/denuncias -- Listar todos os registros (GET)
  *valores header*
-  access_token
-  uid
-  client
+  - access_token
+  - uid
+  - client
  
 #### localhost:3000/api/denuncias -- Criar denuncia (POST)
  *valores body*
-  descricao
-  latitude
-  longitude
-  usuario_criador 
+  - descricao
+  - latitude
+  - longitude
+  - usuario_criador 
   
  *valores header*
-  access_token
-  uid
-  client
+  - access_token
+  - uid
+  - client
  
 #### localhost:3000/api/denuncias -- Atualizar denuncia (PUT)
  *valores body*
-  descricao
-  latitude
-  longitude
-  medida
+ - descricao
+ - latitude
+ - longitude
+ - medida
 
  *valores header*
-  access_token
-  uid
-  client
+  - access_token
+  - uid
+  - client
  
-#### localhost:3000/api/denuncias -- Deletar denuncia (DELETE)
+#### localhost:3000/api/denuncias -- Deletar denuncia (DELETE)                                                                                                      
  incluir id na url
  
  *valores header*
-  access_token
-  uid
-  client
+  - access_token
+  - uid
+  - client
  
 -------------------- Denuncias ( Fim )-----------------------
 
