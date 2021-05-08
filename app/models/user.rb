@@ -12,6 +12,8 @@ class User < ActiveRecord::Base
          :trackable
   include DeviseTokenAuth::Concerns::User
 
+  has_many :denuncias, dependent: :destroy
+
   before_validation :set_uid
 
   private

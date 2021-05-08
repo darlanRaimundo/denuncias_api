@@ -1,4 +1,5 @@
 class Api::V1::DenunciasController < ApplicationController
+  before_action :authenticate_api_user!
   before_action :set_denuncia, only: %i[show update destroy]
 
   # GET /denuncia
@@ -15,7 +16,7 @@ class Api::V1::DenunciasController < ApplicationController
 
   # POST /denuncia
   def create
-    @denuncia = Denuncia.new(denuncia_params)
+    @denuncia = current_api_user.denuncias.new(denuncia_params)
 
     if @denuncia.save
       render json: @denuncia, status: :created, location: api_denuncia_url(@denuncia)
@@ -41,7 +42,7 @@ class Api::V1::DenunciasController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_denuncia
-      @denuncia = Denuncia.find(params[:id])
+      @denuncia = current_api_user.denuncias.find(params[:id])
     end
 
     # Only allow a list of trusted parameters through.
