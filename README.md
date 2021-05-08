@@ -1,24 +1,7 @@
-# README
+Para configurar o banco de dados necessario ir até o arquivo 'config/database.yml' e alterar usuario e senha de seu banco
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+comandos para iniciar o projeto:
+ bundle install
+ rails db:migrate
+ rails s 
+ 
