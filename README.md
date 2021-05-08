@@ -51,7 +51,7 @@ Endpoints API
   - access_token
   - uid
   - client
-  - token                                                                                                                                                            
+  - token                                                                                                                                                          
 ----------- Autenticação usuário ( Fim )-----------------------
                                                                                                                                                                     
 -------------------- Denuncias ( Inicio )-----------------------
