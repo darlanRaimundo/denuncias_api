@@ -3,49 +3,49 @@ Para configurar o banco de dados necessario ir até o arquivo 'config/database.y
 comandos para iniciar o projeto:
  - bundle install
  - rails db:migrate
- - rails s 
+ - rails s                                                                                                                                                            
  
-endpoints api
-
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Endpoints API                                                                                                                                                       
 ----------- Autenticação usuário ( Inicio ) -----------------------
-localhost:3000/api/auth -- registrar usuario (POST)
+####localhost:3000/api/auth -- registrar usuario (POST)
  *valores body*
   - email
   - name
   - password
   - password_confirmation
   
-localhost:3000/api/auth  -- deletar usuario (DELETE)
+####localhost:3000/api/auth  -- deletar usuario (DELETE)
  valores header
   key
    access_token
    uid
    client
 
-localhost:3000/api/auth/sign_in  -- logar (POST)
+####localhost:3000/api/auth/sign_in  -- logar (POST)
  valores body
   email
   password
 
-localhost:3000/api/auth/validate_token  -- validar (GET)
+####localhost:3000/api/auth/validate_token  -- validar (GET)
  valores header
   key
    access_token
    uid
    client
  
-localhost:3000/api/auth/sign_out  -- deslogar (DELETE)
+####localhost:3000/api/auth/sign_out  -- deslogar (DELETE)
  valores header
   key
    access_token
    uid
    client
   
-localhost:3000/api/auth/password -- alteração de senha (POST)
+####localhost:3000/api/auth/password -- alteração de senha (POST)
  valor body
   email
   
-localhost:3000/api/auth/password -- reset de senha (PUT)
+####localhost:3000/api/auth/password -- reset de senha (PUT)
  valores body
   password
   password_confirmation
@@ -53,20 +53,18 @@ localhost:3000/api/auth/password -- reset de senha (PUT)
   access_token
   uid
   client
-  token
-
-
+  token                                                                                                                                                            
 ----------- Autenticação usuário ( Fim )-----------------------
-
+                                                                                                                                                                    
 -------------------- Denuncias ( Inicio )-----------------------
 
-localhost:3000/api/denuncias -- Listar todos os registros (GET)
+####localhost:3000/api/denuncias -- Listar todos os registros (GET)
  valores header
   access_token
   uid
   client
  
-localhost:3000/api/denuncias -- Criar denuncia (POST)
+####localhost:3000/api/denuncias -- Criar denuncia (POST)
  valores body
   descricao
   latitude
@@ -78,7 +76,7 @@ localhost:3000/api/denuncias -- Criar denuncia (POST)
   uid
   client
  
-localhost:3000/api/denuncias -- Atualizar denuncia (PUT)
+####localhost:3000/api/denuncias -- Atualizar denuncia (PUT)
  valores body
   descricao
   latitude
@@ -90,7 +88,7 @@ localhost:3000/api/denuncias -- Atualizar denuncia (PUT)
   uid
   client
  
-localhost:3000/api/denuncias -- Deletar denuncia (DELETE)
+####localhost:3000/api/denuncias -- Deletar denuncia (DELETE)
  incluir id na url
  
  valores header
