@@ -1,24 +1,100 @@
-# README
+Para configurar o banco de dados necessario ir até o arquivo 'config/database.yml' e alterar usuario e senha de seu banco
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+comandos para iniciar o projeto:
+ - bundle install
+ - rails db:migrate
+ - rails s                                                                                                                                                            
+ 
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Endpoints API                                                                                                                                                       
+----------- Autenticação usuário ( Inicio ) -----------------------
+#### localhost:3000/api/auth -- registrar usuario (POST)
+ *valores body*
+  - email
+  - name
+  - password
+  - password_confirmation
+  
+#### localhost:3000/api/auth  -- deletar usuario (DELETE)
+ *valores header*
+   - access_token
+   - uid
+   - client
 
-Things you may want to cover:
+#### localhost:3000/api/auth/sign_in  -- logar (POST)
+ *valores body*
+  - email
+  - password
 
-* Ruby version
+#### localhost:3000/api/auth/validate_token  -- validar (GET)
+ *valores header*
+   - access_token
+   - uid
+   - client
+ 
+#### localhost:3000/api/auth/sign_out  -- deslogar (DELETE)
+ *valores header*
+   - access_token
+   - uid
+   - client
+  
+#### localhost:3000/api/auth/password -- alteração de senha (POST)
+ *valores body*
+  - email
+  
+#### localhost:3000/api/auth/password -- reset de senha (PUT)
+ *valores body*
+  - password
+  - password_confirmation 
+  
+ *valores header*
+  - access_token
+  - uid
+  - client
+  - token                                                                                                                                                          
+----------- Autenticação usuário ( Fim )-----------------------
+                                                                                                                                                                    
+-------------------- Denuncias ( Inicio )-----------------------
 
-* System dependencies
+#### localhost:3000/api/denuncias -- Listar todos os registros (GET)
+ *valores header*
+  - access_token
+  - uid
+  - client
+ 
+#### localhost:3000/api/denuncias -- Criar denuncia (POST)
+ *valores body*
+  - descricao
+  - latitude
+  - longitude
+  - usuario_criador 
+  
+ *valores header*
+  - access_token
+  - uid
+  - client
+ 
+#### localhost:3000/api/denuncias -- Atualizar denuncia (PUT)
+ *valores body*
+ - descricao
+ - latitude
+ - longitude
+ - medida
 
-* Configuration
+ *valores header*
+  - access_token
+  - uid
+  - client
+ 
+#### localhost:3000/api/denuncias -- Deletar denuncia (DELETE)                                                                                                      
+ incluir id na url
+ 
+ *valores header*
+  - access_token
+  - uid
+  - client
+ 
+-------------------- Denuncias ( Fim )-----------------------
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
