@@ -1,12 +1,14 @@
 class Api::V1::DenunciasController < ApplicationController
+  include Paginable
+
   before_action :authenticate_api_user!
   before_action :set_denuncia, only: %i[show update destroy]
 
   # GET /denuncia
   def index
-    @denuncias = Denuncia.all
+    @denuncias = Denuncia.page(current_page).per(per_page)
 
-    render json: @denuncias
+    render json: @denuncias, meta: meta_attributes(@denuncias), adapter: :json
   end
 
   # GET /denuncia/1
