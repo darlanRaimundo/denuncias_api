@@ -13,13 +13,14 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 gem "kaminari", "~> 1.2"
 
+gem 'spring'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :development do
   gem 'listen', '~> 3.3'
-  gem 'spring'
   gem "letter_opener", "~> 1.7"
 end
 
