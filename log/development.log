@@ -5859,3 +5859,29 @@ Processing by Api::V1::DenunciasController#create as JSON
 Completed 201 Created in 106ms (Views: 2.1ms | ActiveRecord: 12.2ms | Allocations: 20022)
 
 
+Started GET "/api/denuncias/?page=2" for ::1 at 2021-05-08 18:27:35 -0300
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::DenunciasController#index as JSON
+  Parameters: {"page"=>"2", "contraints"=>#<ApiConstraints:0x000056309bd5fe40 @version=1, @default=true>}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."uid" = $1 LIMIT $2[0m  [["uid", "darlan@email.com"], ["LIMIT", 1]]
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "denuncia"[0m
+  ↳ app/controllers/concerns/paginable.rb:15:in `meta_attributes'
+  [1m[36mDenuncia Load (0.2ms)[0m  [1m[34mSELECT "denuncia".* FROM "denuncia" LIMIT $1 OFFSET $2[0m  [["LIMIT", 20], ["OFFSET", 20]]
+  ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers]   [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/api/v1/denuncias_controller.rb:11:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Json (14.26ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+Completed 200 OK in 136ms (Views: 25.0ms | ActiveRecord: 16.4ms | Allocations: 34335)
+
+
