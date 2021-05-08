@@ -19,7 +19,7 @@ class Api::V1::DenunciasController < ApplicationController
   # POST /denuncia
   def create
     @denuncia = current_api_user.denuncias.new(denuncia_params)
-
+    @denuncia.status = "Pendente"
     if @denuncia.save
       render json: @denuncia, status: :created, location: api_denuncia_url(@denuncia)
     else
@@ -30,6 +30,10 @@ class Api::V1::DenunciasController < ApplicationController
   # PATCH/PUT /denuncia/1
   def update
     if @denuncia.update(denuncia_params)
+      if @denuncia.medida != ""
+        @denuncia.status = 'Concluida'
+        @denuncia.save
+      end
       render json: @denuncia
     else
       render json: @denuncia.errors, status: :unprocessable_entity
