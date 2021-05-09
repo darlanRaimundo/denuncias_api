@@ -59,13 +59,13 @@ DeviseTokenAuth.setup do |config|
   config.send_confirmation_email = true
 
   config.default_confirm_success_url = if Rails.env.production?
-                                        'http://denuncias-api/login'
+                                        'http://denuncia-api/login'
                                        else
                                          'http://localhost:4200/login'
                                        end
  
   config.default_password_reset_url = if Rails.env.production?
-                                        'http://denuncias-api/reset-password'
+                                        'http://denuncia-api/reset-password'
                                       else
                                         'http://localhost:4200/reset-password'
                                       end
