@@ -65,9 +65,9 @@ DeviseTokenAuth.setup do |config|
                                        end
  
   config.default_password_reset_url = if Rails.env.production?
-                                        'http://denuncias-api/reset-password''
+                                        'http://denuncias-api/reset-password'
                                       else
-                                        'http://localhost:4200/reset-password''
+                                        'http://localhost:4200/reset-password'
                                       end
 
   config.remove_tokens_after_password_reset = true
