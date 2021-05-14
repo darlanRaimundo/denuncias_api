@@ -196,6 +196,7 @@ DEPENDENCIES
   active_model_serializers (~> 0.10.12)
   bootsnap (>= 1.4.4)
   byebug
+  devise
   devise_token_auth (~> 1.1)
   kaminari (~> 1.2)
   letter_opener (~> 1.7)
