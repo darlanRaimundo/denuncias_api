@@ -11,7 +11,6 @@ gem "kaminari", "~> 1.2"
 gem 'spring'
 gem "rack-cors", "~> 1.1"
 gem "devise_token_auth", "~> 1.1"
-gem "devise"
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
