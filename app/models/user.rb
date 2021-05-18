@@ -13,7 +13,7 @@ class User < ActiveRecord::Base
   include DeviseTokenAuth::Concerns::User
 
   has_many :denuncias, dependent: :destroy
-  before_create :set_values!
+  before_create :set_values
 
   private
   def set_values
